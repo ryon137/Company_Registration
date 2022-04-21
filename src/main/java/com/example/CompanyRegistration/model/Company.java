@@ -1,5 +1,6 @@
 package com.example.CompanyRegistration.model;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
 import javax.validation.constraints.Min;
@@ -11,7 +12,7 @@ import java.util.UUID;
 public class Company {
 
     @Id
-    private UUID companyCode;
+    private ObjectId companyCode;
     @NotBlank(message = "mandatory")
     private String companyName;
     @NotBlank(message = "mandatory")
@@ -25,11 +26,11 @@ public class Company {
     private String listedStockExchange;
     private Optional<Stock> relatedStock;
 
-    public UUID getCompanyCode() {
+    public ObjectId getCompanyCode() {
         return companyCode;
     }
 
-    public void setCompanyCode(UUID companyCode) {
+    public void setCompanyCode(ObjectId companyCode) {
         this.companyCode = companyCode;
     }
 
