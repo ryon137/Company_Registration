@@ -1,14 +1,12 @@
-package com.example.HackFSE.model;
+package com.example.CompanyRegistration.model;
 
 import org.springframework.data.annotation.Id;
 
-import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.Optional;
 import java.util.UUID;
 
 public class Stock {
+    @Id
     private UUID companyCode;
     private double price;
     private LocalDateTime date;

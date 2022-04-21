@@ -1,12 +1,8 @@
-package com.example.HackFSE.service;
+package com.example.CompanyRegistration.service;
 
-import com.example.HackFSE.model.Company;
-import com.example.HackFSE.repository.CompanyRepository;
+import com.example.CompanyRegistration.model.Company;
+import com.example.CompanyRegistration.repository.CompanyRepository;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
 
 @Service
 public class CompanyService {

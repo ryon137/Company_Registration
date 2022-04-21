@@ -1,10 +1,10 @@
-package com.example.HackFSE;
+package com.example.CompanyRegistration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class HackFseApplicationTests {
+@SpringBootTest(classes = CompanyRegistration.class)
+class CompanyRegistrationTests {
 
 	@Test
 	void contextLoads() {
