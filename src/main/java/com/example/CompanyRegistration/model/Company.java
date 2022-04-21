@@ -24,7 +24,7 @@ public class Company {
     private String companyWebsite;
     @NotBlank(message = "mandatory")
     private String listedStockExchange;
-    private Optional<Stock> relatedStock;
+    private Stock relatedStock;
 
     public ObjectId getCompanyCode() {
         return companyCode;
@@ -74,11 +74,11 @@ public class Company {
         this.listedStockExchange = listedStockExchange;
     }
 
-    public Optional<Stock> getRelatedStock() {
+    public Stock getRelatedStock() {
         return relatedStock;
     }
 
-    public void setRelatedStock(Optional<Stock> relatedStock) {
+    public void setRelatedStock(Stock relatedStock) {
         this.relatedStock = relatedStock;
     }
 
