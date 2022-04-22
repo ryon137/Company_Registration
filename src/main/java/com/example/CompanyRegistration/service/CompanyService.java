@@ -5,8 +5,6 @@ import com.example.CompanyRegistration.repository.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-
 @Service
 public class CompanyService {
     @Autowired
@@ -17,7 +15,6 @@ public class CompanyService {
     }
 
     public Company createCompany(Company company){
-        System.out.println(LocalDateTime.now());
         return companyRepository.save(company);
     }
 
